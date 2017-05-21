@@ -18,11 +18,12 @@
 
 // TODO: See https://firebase.google.com/docs/web/setup for how to configure access to Firebase
 const firebaseConfig = {
-
   apiKey: "AIzaSyD2RSmyTLehJ7q-vpDKX3AE9W55-N7FzdM",
   authDomain: "pedicab-tracker.firebaseapp.com",
   databaseURL: "https://pedicab-tracker.firebaseio.com",
+  projectId: "pedicab-tracker",
   storageBucket: "pedicab-tracker.appspot.com",
+  messagingSenderId: "601686359467"
 };
 firebase.initializeApp(config);
 
