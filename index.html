@@ -19,13 +19,13 @@
             <svg>
                 <g fill="none" fill-rule="evenodd" stroke="none" stroke-width="1">
                     <circle id="page-marker-panel-0"
-                        cx="13" cy="13" r="12" stroke="#445A65" stroke-width="2" 
+                        cx="13" cy="13" r="12" stroke="#445A65" stroke-width="2"
                         fill="none"/>
                     <circle id="page-marker-panel-1"
-                        cx="61" cy="13" r="12" stroke="#445A65" stroke-width="2" 
+                        cx="61" cy="13" r="12" stroke="#445A65" stroke-width="2"
                         fill="none"/>
                     <circle id="page-marker-panel-2"
-                        cx="109" cy="13" r="12" stroke="#445A65" stroke-width="2" 
+                        cx="109" cy="13" r="12" stroke="#445A65" stroke-width="2"
                         fill="none"/>
                 </g>
             </svg>
@@ -33,7 +33,19 @@
 
         <script src="https://www.gstatic.com/firebasejs/3.7.4/firebase.js"></script>
         <script src="js/index.js"></script>
-        <!-- TODO: Add Google Maps API Key here -->
+        <script src="https://www.gstatic.com/firebasejs/4.0.0/firebase.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyD2RSmyTLehJ7q-vpDKX3AE9W55-N7FzdM",
+    authDomain: "pedicab-tracker.firebaseapp.com",
+    databaseURL: "https://pedicab-tracker.firebaseio.com",
+    projectId: "pedicab-tracker",
+    storageBucket: "pedicab-tracker.appspot.com",
+    messagingSenderId: "601686359467"
+  };
+  firebase.initializeApp(config);
+</script>
         <script async defer
     src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap&libraries=geometry">
     </script>

@@ -17,7 +17,14 @@
 /* globals google firebase */
 
 // TODO: See https://firebase.google.com/docs/web/setup for how to configure access to Firebase
-const firebaseConfig = {};
+const firebaseConfig = {
+
+  apiKey: "AIzaSyD2RSmyTLehJ7q-vpDKX3AE9W55-N7FzdM",
+  authDomain: "pedicab-tracker.firebaseapp.com",
+  databaseURL: "https://pedicab-tracker.firebaseio.com",
+  storageBucket: "pedicab-tracker.appspot.com",
+};
+firebase.initializeApp(config);
 
 const mapStyle = [
   {
@@ -134,7 +141,7 @@ class Card {
 
   get render() {
     return `
-    <div 
+    <div
       class="card ${this.isDark ? 'dark' : 'light'}"
       style="height: ${this.cardHeight}px"
       >
